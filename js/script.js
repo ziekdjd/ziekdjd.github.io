@@ -13,9 +13,9 @@
 
     // Load projects from external file
     document.addEventListener('DOMContentLoaded', function() {
-      const projectsElement = document.querySelector('[source="source/projects/index.html"]');
+      const projectsElement = document.querySelector('[source="/source/projects/index.html"]');
       if (projectsElement) {
-        fetch('source/projects/index.html')
+        fetch('/source/projects/index.html')
           .then(response => response.text())
           .then(data => {
             projectsElement.innerHTML = data;
