@@ -1,101 +1,65 @@
-/* Root */
-:root {
-  --background-1: #23272A;
-  --background-2: #454FBF;
-  --background-3: #7289DA;
-  --background-4: #4E5D94;
-  --neon-1:
-    0 0 10px currentColor;
-  --neon-2:
-    0 0 5px currentColor;
-  --neon-3:
-    0 0 20px currentColor;
-  --neon-4:
-    0 0 15px currentColor;
-  --color-1: white;
-  --border-1:
-    .25ch .25ch 0 currentColor,
-    .30ch .30ch 0 currentColor;
-  --border-2:
-    .10ch .10ch 0 currentColor;
-}
-
-/* Main Style */
-@import url('https://fonts.googleapis.com/css2?family=Single+Day&&display=swap');
-
-html,
-body {
-  font-family: "Single Day", cursive;
-  width: 100%;
-  /* height: 100ch; */
-  margin: 0;
-  padding: 0;
-  /* padding-top: 10%; */
-  background-color: var(--background-1);
-  color: var(--color-1);
-  letter-spacing: 2px;
-  align-items: auto;
-  position: absolute;
-}
-
-* {
-  text-align: center;
-  color: white;
-  text-decoration: none;
-}
-
-p {
-  font-size: 20px;
-}
-
-.copy a {
-  text-shadow: var(--neon-1);
-}
-
-hr {
-  background-color: currentColor;
-}
-
-p .note {
-  color: currentColor;
-}
-
-.box_note {
-  left: 50px;
-  width: 40%;
-  height: auto;
-  border: solid 2px currentColor;
-  border-radius: 2px;
-  margin-left: 80px;
-  color: currentColor;
-}
-
-/* Scroll Bar */
-::-webkit-scrollbar {
-  width: 12px;
-  background-color: gray;
-  border: solid white 1px;
-  border-radius: 10px;
-
-
-}
-
-::-webkit-scrollbar-button {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-::-webkit-scrollbar-corner {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #4a4d52;
-  border: 1px solid #282a2d;
-  border-radius: 10px;
-}
-
-nav {
-  position: fixed;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .project-card {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .project-card h3 {
+      color: #667eea;
+      margin-bottom: 0.5rem;
+    }
+    
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }

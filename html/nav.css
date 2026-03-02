@@ -1,0 +1,17 @@
+nav {
+    background: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #667eea;
+}

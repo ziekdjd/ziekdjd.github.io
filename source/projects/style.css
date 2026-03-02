@@ -1,0 +1,23 @@
+button {
+    margin: 10px 0;
+}
+
+.download-source {
+    background-color: #0969da;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.download-source:hover {
+    background-color: #0860ca;
+}
+
+.download-source:disabled {
+    background-color: #6e7681;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
