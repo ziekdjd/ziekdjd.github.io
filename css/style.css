@@ -49,6 +49,7 @@
     
     .project-card:hover {
       transform: translateY(-5px);
+      z-index: -1;
     }
     
     .project-card h3 {
