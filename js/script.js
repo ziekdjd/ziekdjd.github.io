@@ -11,9 +11,9 @@
         .catch(error => console.error('Error loading navigation:', error));
     });
 
-    // Load projects from projects folder
+    // Load projects from school library management system file
     document.addEventListener('DOMContentLoaded', function() {
-      const projectsElement = document.querySelector('[source="/source/projects/index.html"]');
+      const projectsElement = document.querySelector('[source="/source/projects/school-library-management-system.html"]');
       if (projectsElement) {
         fetch('/source/projects/school-library-management-system.html')
           .then(response => response.text())
