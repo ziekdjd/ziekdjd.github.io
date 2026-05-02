@@ -13,7 +13,7 @@
 
     // Load projects from projects folder
     document.addEventListener('DOMContentLoaded', function() {
-      const projectsElement = document.querySelector('[source="/source/projects/school-library-management-system.html"]');
+      const projectsElement = document.querySelector('[source="/source/projects/index.html"]');
       if (projectsElement) {
         fetch('/source/projects/school-library-management-system.html')
           .then(response => response.text())
