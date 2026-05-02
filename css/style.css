@@ -47,6 +47,10 @@
       transition: transform 0.3s;
     }
     
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    
     .project-card h3 {
       color: #667eea;
       margin-bottom: 0.5rem;
