@@ -15,6 +15,7 @@ a {
 
 .download-source:hover {
     background-color: #0860ca;
+    z-index: initial;
 }
 
 a[disabled], a[disabled]:hover {
