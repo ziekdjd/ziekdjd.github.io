@@ -11,11 +11,11 @@
         .catch(error => console.error('Error loading navigation:', error));
     });
 
-    // Load projects from external file
+    // Load projects from projects folder
     document.addEventListener('DOMContentLoaded', function() {
-      const projectsElement = document.querySelector('[source="/source/projects/index.html"]');
+      const projectsElement = document.querySelector('[source="/source/projects/school-library-management-system.html"]');
       if (projectsElement) {
-        fetch('/source/projects/index.html')
+        fetch('/source/projects/school-library-management-system.html')
           .then(response => response.text())
           .then(data => {
             projectsElement.innerHTML = data;
