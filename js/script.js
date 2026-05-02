@@ -11,7 +11,7 @@
         .catch(error => console.error('Error loading navigation:', error));
     });
 
-    // Load projects
+    // Load projects from external file
     document.addEventListener('DOMContentLoaded', function() {
       const projectsElement = document.querySelector('[source="/source/projects/index.html"]');
       if (projectsElement) {
